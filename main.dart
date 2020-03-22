@@ -12,6 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+
 import 'package:example_flutter/pages/fcfs.dart';
 import 'package:flutter/material.dart';
 
@@ -24,11 +25,12 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData.dark(),
+      
       title: 'scheduling algorithms simulator',
       debugShowCheckedModeBanner: false,
-      initialRoute: 'fcfs',
+      initialRoute: 'FCFSPage',
       routes: {
-        'fcfs':(context) => FcFS(),
+        'FCFSPage':(context) => FCFSPage(),
       },
 
     );
