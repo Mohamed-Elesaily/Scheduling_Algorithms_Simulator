@@ -1,3 +1,4 @@
+
 import 'package:example_flutter/scheduling_algorithm/fcfs_algorithm.dart';
 import 'package:example_flutter/widgets/chart.dart';
 import 'package:flutter/material.dart';
@@ -92,10 +93,10 @@ class _FCFSPageState extends State<FCFSPage> {
                             
                             
                             setState(() {
-
-                              fcfsitem.add(new FCFS(_burst.text)); 
-                          
-
+                              if(int.parse(_burst.text)>0){  
+                                fcfsitem.add(new FCFS(_burst.text)); 
+                           }
+                                   
                             });
                         } 
                       )
